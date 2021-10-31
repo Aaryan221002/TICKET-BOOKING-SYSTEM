@@ -16,30 +16,30 @@ int main()
 		cin>>age[i];
 	}
 	cout<<"\n=====================================\n";
-	cout<<"\nThe rates for discovery.\n";
+	cout<<"\nThe rates for journey.\n";
 	for(i=0;i<a;i++)
 	{
 		if(age[i]>=10 && age[i]<15)
 		{
 			cout<<"\n\n10-15(age) wins 10% discount.";
 			amt[i]=100-(100*10/100);
-			cout<<"\nRates for discovery for "<<age[i]<<" years member is: Rs "<<amt[i];
+			cout<<"\nRates for journey for "<<age[i]<<" years member is: Rs "<<amt[i];
 		}
 		else if(age[i]>=15 && age[i]<=20)
 		{
 			cout<<"\n\n15-20(age) wins 5% discount.";
 			amt[i]=100-(100*5/100);
-			cout<<"\nRates for discovery for "<<age[i]<<" years member is: Rs "<<amt[i];
+			cout<<"\nRates for journey for "<<age[i]<<" years member is: Rs "<<amt[i];
 		}
 		else if(age[i]>20)
 		{
 			cout<<"\n\nAbove 20 Rates is fix.";
 			amt[i]=100;
-			cout<<"\nRates for discovery for "<<age[i]<<" years member is: Rs "<<amt[i];
+			cout<<"\nRates for journey for "<<age[i]<<" years member is: Rs "<<amt[i];
 		}
 		else
 		{
-			cout<<"\n\n"<<age[i]<<" years are not allowed because Below 10 Children are not allowed to sit on discovery\n";
+			cout<<"\n\n"<<age[i]<<" years are not allowed because Below 10 Children are not allowed to sit on bus\n";
 			amt[i]=0;
 		}
 		sum+=amt[i];
